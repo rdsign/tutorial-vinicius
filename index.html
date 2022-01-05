@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    <div id="head">
+        <h1>Olá Vinicius</h1>
+        <p>Bora <b>começar</b></p>
+    </div>
+    <section>
+        <div class="box primeiro">
+            <img src="https://media-exp1.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2159024400&v=beta&t=CrP5Le1mWICRcaxIGNBuajHcHGFPuyNA5C8DI339lSk" alt="image">
+        </div>
+        <div class="box segundo">
+            <p>
+                CONTAGEM:
+                <span id="contagem">0</span>
+            </p>
+            <button onclick="subtrair()">
+                SUB
+            </button>
+            <button onclick="adicionar()">
+                ADICIONAR
+            </button>
+        </div>
+    </section>
+    <script>
+        var contagem = document.getElementById('contagem')
+
+        function adicionar() {
+            var valorAtual = parseInt(contagem.innerText)
+            contagem.innerText = valorAtual + 1
+        }
+
+        function subtrair() {
+            var valorAtual = parseInt(contagem.innerText)
+            contagem.innerText = valorAtual - 1
+        }
+
+    </script>
+</body>
+</html>
